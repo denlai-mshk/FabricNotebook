@@ -10,12 +10,13 @@ Microsoft Dataverse direct link to Microsoft Fabric enables organizations to ext
 
 
 # Notebook
-You can find these notebook can allow you to read data from Dataverse and write to ADLS2 or PostgreSQL with incremental data manners
-- No OneLake storage needed
-- Support near-real time updates by setting the scheduled trigger
-- All data transit in private network
-- Leverage Fabric Workspace Identity to simplify the authorization workflow
-  
+These notebooks enable you to read data from Dataverse and write to ADLS2 or PostgreSQL incrementally
+- No OneLake storage is needed
+- Support near-real-time updates by setting a short-period scheduled trigger
+- ensuring all data transit occurs within a private network
+- leverage Fabric Workspace Identity to simplify the authorization workflow
+- Use Dynamics365 Customer Insight Journey, marketing data {EmailOpened / EmailClicked} as datra source
+ 
   [sink to ADLS2 (CSV, JSON)](/writedata_ADLS2)
 
   [sink to PostgreSQL database](/writedata_PostgreSQL)
