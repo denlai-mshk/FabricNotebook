@@ -26,6 +26,17 @@ These notebooks enable you to read data from Dataverse and write to ADLS2 or Pos
 
   [Guideline](/fabric_notebook_workflow.pdf)
 
+# Private endpoint
+- To disable public access for Fabric, ADLS2, and PostgreSQL, you need to set up the following:
+    - For Fabric, configure a Private Link.
+    - For ADLS2, establish a Private Endpoint.
+    - For PostgreSQL, create a Managed Private Endpoint.
+- Additionally, you may need to deploy a virtual machine within your VNET to access the Fabric portal and enable the "Block public access" setting.
+
+- ![Networking Diagram for ADLS2](/privatelink_adls2.png)
+
+- ![Networking Diagram for PostgreSQL](/privatelink_postgresql.png)
+
 # References
  - [Set up and use private links for secure access to Fabric - Microsoft Fabric | Microsoft Learn](https://learn.microsoft.com/en-us/fabric/security/security-private-links-use#step-5-create-a-private-endpoint)
 
